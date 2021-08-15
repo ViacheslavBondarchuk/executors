@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * time: 6:00 PM
  **/
 public abstract class AbstractSubject<D> implements Subject<D> {
-    private final Queue<Observer<D>> observers = new ConcurrentLinkedQueue<>();
+    protected final Queue<Observer<D>> observers = new ConcurrentLinkedQueue<>();
 
     @Override
     public void subscribe(Observer<D> observer) {
