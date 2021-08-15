@@ -1,7 +1,7 @@
 package hbv.com.ua.observer;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
  * author: viacheslavbondarchuk
@@ -9,7 +9,7 @@ import java.util.List;
  * time: 6:00 PM
  **/
 public abstract class AbstractSubject<D> implements Subject<D> {
-    private final List<Observer<D>> observers = new LinkedList<>();
+    private final Queue<Observer<D>> observers = new ConcurrentLinkedQueue<>();
 
     @Override
     public void subscribe(Observer<D> observer) {
