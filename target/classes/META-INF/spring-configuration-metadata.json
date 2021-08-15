@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "listenable",
+      "type": "hbv.com.ua.configuration.impl.ListenableThreadPoolTaskExecutorConfiguration",
+      "sourceType": "hbv.com.ua.configuration.impl.ListenableThreadPoolTaskExecutorConfiguration"
+    },
+    {
+      "name": "observable",
+      "type": "hbv.com.ua.configuration.impl.ObservableThreadPollTaskExecutorConfiguration",
+      "sourceType": "hbv.com.ua.configuration.impl.ObservableThreadPollTaskExecutorConfiguration"
+    },
+    {
+      "name": "task.executor.shutdown.listener",
+      "type": "hbv.com.ua.configuration.impl.ShutdownTaskExecutorListenerConfiguration",
+      "sourceType": "hbv.com.ua.configuration.impl.ShutdownTaskExecutorListenerConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "listenable.threads",
+      "type": "java.lang.Integer",
+      "sourceType": "hbv.com.ua.configuration.impl.ListenableThreadPoolTaskExecutorConfiguration"
+    },
+    {
+      "name": "listenable.time-unit",
+      "type": "java.util.concurrent.TimeUnit",
+      "sourceType": "hbv.com.ua.configuration.impl.ListenableThreadPoolTaskExecutorConfiguration"
+    },
+    {
+      "name": "listenable.timeout",
+      "type": "java.lang.Long",
+      "sourceType": "hbv.com.ua.configuration.impl.ListenableThreadPoolTaskExecutorConfiguration"
+    },
+    {
+      "name": "observable.threads",
+      "type": "java.lang.Integer",
+      "sourceType": "hbv.com.ua.configuration.impl.ObservableThreadPollTaskExecutorConfiguration"
+    },
+    {
+      "name": "observable.time-unit",
+      "type": "java.util.concurrent.TimeUnit",
+      "sourceType": "hbv.com.ua.configuration.impl.ObservableThreadPollTaskExecutorConfiguration"
+    },
+    {
+      "name": "observable.timeout",
+      "type": "java.lang.Long",
+      "sourceType": "hbv.com.ua.configuration.impl.ObservableThreadPollTaskExecutorConfiguration"
+    },
+    {
+      "name": "task.executor.shutdown.listener.await-termination",
+      "type": "java.lang.Long",
+      "sourceType": "hbv.com.ua.configuration.impl.ShutdownTaskExecutorListenerConfiguration"
+    },
+    {
+      "name": "task.executor.shutdown.listener.time-unit",
+      "type": "java.util.concurrent.TimeUnit",
+      "sourceType": "hbv.com.ua.configuration.impl.ShutdownTaskExecutorListenerConfiguration"
+    }
+  ],
+  "hints": []
+}
