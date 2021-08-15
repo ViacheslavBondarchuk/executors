@@ -97,7 +97,7 @@ public class ObservableThreadPoolTaskExecutorImpl implements ObservableThreadPoo
         tasks.forEach(task -> executorService.submit(new ObservableAdapter<D>(task, observer)));
     }
 
-    public class ObservableRunnerImpl implements ObservableRunner {
+    public final class ObservableRunnerImpl implements ObservableRunner {
 
         public ObservableRunnerImpl submit(Runnable task) {
             ObservableThreadPoolTaskExecutorImpl.this.submit(task);
